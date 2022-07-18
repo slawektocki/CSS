@@ -1,0 +1,117 @@
+
+ #kontener {
+    background-color: #000;
+    color: #fff;
+    font-size: 100px;
+    height: 50vh;
+    width: 50vw;
+    position: relative;
+  }
+  
+  .animacja {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50vw;
+  }
+  
+  
+  #zegar1, #zegar2, #zegar3, #zegar4, #zegar5, #zegar6, #zegar7, #zegar8, #zegar9, #zegar10, #zegar0 {
+    text-align: center;
+    visibility: hidden;
+  }
+  
+  @keyframes znikanie {
+    0% {
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
+  
+  @keyframes wyswietlanie {
+    0%, 100% {
+      visibility: visible;
+    }
+  }
+  
+  #zegar10 {
+    animation-duration: 1s;
+    animation-name: znikanie;
+    
+  }
+  
+  #zegar9 {
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-name: znikanie;
+    
+  }
+  
+  #zegar8 {
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-name: znikanie;
+    
+  }
+  
+  #zegar7 {
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-name: znikanie;
+   
+  }
+  
+  #zegar6 {
+    animation-delay: 4s;  
+    animation-duration: 1s;
+    animation-name: znikanie;
+    
+  }
+  
+  #zegar5 {
+    animation-delay: 5s;
+    animation-duration: 1s;
+    animation-name: znikanie;
+    
+  }
+  
+  #zegar4 {
+    animation-delay: 6s;
+    animation-duration: 1s;
+    animation-name: znikanie;
+    
+  }
+  
+  #zegar3 {
+    animation-delay: 7s;
+    animation-duration: 1s;
+    animation-name: znikanie;
+    
+  }
+  
+  #zegar2 {
+    animation-delay: 8s;
+    animation-duration: 1s;
+    animation-name: znikanie;
+    
+  }
+  
+  #zegar1 {
+    animation-delay: 9s;
+    animation-duration: 1s;
+    animation-name: znikanie;
+    
+  }
+  
+  #zegar0 {
+    animation-delay: 10s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: wyswietlanie;
+    
+  }
+  
+  
